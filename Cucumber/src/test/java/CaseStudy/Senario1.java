@@ -1,4 +1,4 @@
-/*package CaseStudy;
+package CaseStudy;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,13 +13,12 @@ public class Senario1
 	WebDriver driver;
  
 	@Given("URL of TestMeApp {string}")
-	public void url_of_TestMeApp(String string) throws InterruptedException {
+	public void url_of_TestMeApp(String string)  {
 	   
 	    String path="C:\\Users\\a07208trng_b4a.04.26\\Desktop\\Selenium_Aakash\\jar\\chromedriver.exe";
 	    System.setProperty("webdriver.chrome.driver",path);
 		 driver= new ChromeDriver(); 
-		 driver.manage().window().fullscreen();
-		 Thread.sleep(1000);
+		 driver.manage().window().maximize();
 		  driver.get(string);
 		  
 	}
@@ -104,4 +103,4 @@ public class Senario1
 	}
 
 	
-}*/
+}

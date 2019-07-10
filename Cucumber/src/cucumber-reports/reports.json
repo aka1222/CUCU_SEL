@@ -1,0 +1,99 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-07-10T05:47:49.233Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6078605800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "findby.init()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "saun and luca are not in range",
+        "description": "",
+        "id": "basic-feature;saun-and-luca-are-not-in-range",
+        "after": [
+          {
+            "result": {
+              "duration": 273288200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "findby.destroy()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1877200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "saun is 200Km away from luca",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "basicJava.saun_is_Km_away_from_luca(Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 810900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "saun shouts \"Dont Run\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dont Run\"",
+                  "offset": 12
+                }
+              ],
+              "location": "basicJava.saun_shouts(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3339600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "luca cannot listen to the message",
+            "match": {
+              "location": "basicJava.luca_listens_to_the_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "basic feature",
+    "description": "",
+    "id": "basic-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/mahPackage/basic.feature",
+    "tags": []
+  }
+]
